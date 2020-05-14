@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.form-wrapper {
+  width: 500px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  background: #98fb99;
+}
+.dklabel {
+  color: blue;
+  /* border: 1px solid red; */
+  width: auto;
+  margin: 5px;
+  padding: 5px;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.dktext {
+  display: flex;
+  justify-content: center;
+  border: 3px inset orange;
+  /* flex-direction: column; */
+  color: tomato;
+  width: 200px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
