@@ -73,9 +73,9 @@ const Form = () => {
 
   return (
     <div className="form-wrapper">
-      <fieldset>
-        <h1>Form goes down here</h1>
-        <form onSubmit={submitForm}>
+      <form onSubmit={submitForm}>
+        <fieldset>
+          <legend>Form goes down here</legend>
           <label className="dklabel" htmlFor="name">
             Name:
             <input
@@ -130,9 +130,9 @@ const Form = () => {
             />
           </label>
           {/* Button and Submit */}
-          <button type="button">Submit</button>
-        </form>
-      </fieldset>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
     </div>
   );
 };

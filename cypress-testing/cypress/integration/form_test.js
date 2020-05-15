@@ -1,3 +1,8 @@
+///<reference types="cypress"/>
+
+// import Chance from "chance";
+// const chance = new Chance();
+
 describe("This is my first test", () => {
   it("should return true", () => {
     expect(true).to.equal(true);
@@ -13,17 +18,17 @@ describe("testing our form inputs", () => {
       .type("Dipesh Koirala")
       .should("have.value", "Dipesh Koirala");
 
-    //cy.get("#email").contains("@");
+    cy.get('input[name="email"]').type("dipeshkoirala@gmail.com");
 
     cy.get('input[type="checkbox"]').check().should("be.checked");
-
+    cy.contains("Submit").click();
     //Arrange
     //Act
     //Assert
   });
 
-  it("send email with contact ", () => {
-    cy.get("form").submit();
-    //cy.get("#success-message").should("be.visible");
-  });
+  //   it("send email with contact ", () => {
+  //     cy.contains("Submit").click();
+  //     //cy.get("#success-message").should("be.visible");
+  //   });
 });
